@@ -15,7 +15,6 @@ function Routing() {
     return (
         <Routes>
             <Route exact path={`${baseurl}/`} element={<HomePage />}></Route>
-            <Route exact path={`${baseurl}/`} element={<HomePage />}></Route>
             <Route exact path={`${baseurl}/account`} element={<AccountPage />}></Route>
             <Route exact path={`${baseurl}/login`} element={<Login />}></Route>
             <Route exact path={`${baseurl}/signup`} element={<Signup />}></Route>

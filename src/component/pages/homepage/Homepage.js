@@ -28,6 +28,24 @@ function Homepage() {
   return (
     <div className='homepage'>
       {/* <div className="image-text max-w-[1350px]">
+function Homepage() {
+  const images1 = [
+    { 'imageSrc': '/slider-image.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-image.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-image.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-image.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+  ]
+  const images2 = [
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+    { 'imageSrc': '/slider-foodimage.svg', 'title': 'TEst', alt: 'TEst1' },
+  ]
+  return (
+    <div className='homepage'>
+      {/* <div className="image-text">
         <img src="/homepage-mainmage.png" className="h-[337px] w-[100%]" alt='home' />
         <div className="hompage-image-text">
           <h2 className='main-heading'>Best Home Made Food</h2>

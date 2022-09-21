@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Modal, Stack } from 'react-bootstrap';
 
-function ResetPassword() {
+function ResetPassword(props) {
   const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
@@ -9,7 +9,7 @@ function ResetPassword() {
 
   return (
     <>
-      <Modal  size="sm" centered={true} show={show} onHide={handleClose}>
+      <Modal  size="sm" centered={true} show={props.isShow} onHide={props.handleResetClose}>
         <div className="login-modal">
         <Modal.Header closeButton>
           <Stack gap={0} className="col-md-5 mx-auto">

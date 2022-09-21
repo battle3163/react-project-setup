@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Modal, Stack } from 'react-bootstrap';
 
-function Signup() {
+function Signup(props) {
   const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
@@ -9,7 +9,7 @@ function Signup() {
 
   return (
     <>
-      <Modal  size="md" centered={true} show={show} onHide={handleClose}>
+      <Modal  size="sm-md" centered={true} show={props.isShow} onHide={props.handleSignUpClose}>
         <div className="login-modal">
         <Modal.Header closeButton>
           <Stack gap={0} className="col-md-5 mx-auto">
@@ -55,12 +55,12 @@ function Signup() {
               />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Button variant="success" style={{width:"-webkit-fill-available"}}>Login</Button>
+              <Button variant="success" style={{width:"-webkit-fill-available"}}>Sign-up</Button>
             </Form.Group>
 
           </Form>
           <Modal.Footer>
-            <p style={{ margin: "auto"}}>Already have an account? <a href="/login"><span style={{ color: "#4ECB71" }}>Login</span></a></p>
+            <p style={{ margin: "auto"}}> Already have an account? <a onClick={props.handleSignUp} href='javascript:void(0)'><span style={{ color: "#4ECB71" }}>Login</span></a></p>
           </Modal.Footer>
         </Modal.Body>
         </div>

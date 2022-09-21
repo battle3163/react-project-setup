@@ -2,19 +2,28 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import './header.scss'
 import MegaMenu from "./MegaMenu";
+import Login from '../helper/Login'
+import SignUp from '../helper/Signup'
 export default function Header() {
   const mega = [{ 'title': 'My Orders','to':'/orders','imgSrc':'/mega-order.svg' ,'imgAlt':'mega'},
                 { 'title': 'Notifications','to':'/orders','imgSrc':'/mega-notification.svg' ,'imgAlt':'mega' },
                 { 'title': 'Inbox','to':'/orders','imgSrc':'/mega-inbox.svg' ,'imgAlt':'mega' }, 
               ]
   const [hover, setHover] = useState(false)
+  const [show, setShow] = useState(false)
+
   const MouseOver = () => {
     setHover(true)
   }
+  let isLogin=false;
   const MouseOut = () => {
     setHover(false)
   }
-  return (
+  const handleLogin = () => {
+    setShow(!show)
+  }
+
+  return (<div>
     <header className="main-header bg-header_background ">
       <div className='large-header hidden md:block'>
         <div className='container mx-auto px-[30px] w-full max-w-full'>
@@ -44,14 +53,19 @@ export default function Header() {
                       <i className="fa fa-caret-down arrow-icon"></i>
                     </Link>
                   </li>
-                  <li key={'account'} className='group relative' onMouseOver={MouseOver} onMouseOut={MouseOut}>
+                  {
+                    isLogin?(<li key={'account'} className='group relative' onMouseOver={MouseOver} onMouseOut={MouseOut}>
                     <Link to={'/account'} className='px-[22px] py-[25px] block header-text'>My account
                       <i className="fa fa-caret-down arrow-icon"></i>
                     </Link>
                     {
                       mega.length > 0 && hover && <MegaMenu mega={mega} classes="scrollbar block absolute bg-white z-[99999999] top-full left-1/2 -translate-x-1/2" />
                     }
-                  </li>
+                  </li>):(<li key={'cart'} className='group'>
+                    <a onClick={handleLogin} href='javascript:void(0)' className='px-[22px] py-[25px] block header-text'>Login
+                    </a>
+                  </li>)
+                  }
                   <li key={'cart'} className='group'>
                     <Link to={'/cart'} className='px-[22px] py-[25px] block header-text'>Cart
                       <i className="fa fa-caret-down arrow-icon"></i>
@@ -64,5 +78,7 @@ export default function Header() {
         </div>
       </div>
     </header>
+    <Login isShow={show} handleLogin={handleLogin} />
+    </div>
   )
 }

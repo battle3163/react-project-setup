@@ -74,6 +74,7 @@ export default function SimpleSlider() {
                             </div>
                         </div> */}
                             <Card style={{ width: '18rem' }}>
+                                <a href='/kitchen'>
                                 <Card.Img src={imgSrc} />
                                 <Card.Body>
                                     <Card.Text>
@@ -89,10 +90,10 @@ export default function SimpleSlider() {
                                             value={4}
                                             classNames={"star-rating-c"}
                                         />
-                                        {/* <span className="star-count">4</span> */}
+                                        <span className="star-count">4</span>
                                         </div>
                                     </Card.Text>
-                                </Card.Body>
+                                </Card.Body></a>
                             </Card>
                         </div>
                     )

@@ -1,0 +1,37 @@
+    .login-modal{
+    .modal-header{
+      border: none;
+      padding-bottom: 0px;
+    }
+    .modal-header .btn-close {
+      opacity: 0.7;
+    }
+    .modal-footer{
+      border: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .inc-dec-button{
+  
+    .btn-outline-success{
+      border-radius: 0%;
+      --bs-btn-active-bg: #ffffff;
+      --bs-btn-hover-bg: #ffffff;
+    }
+  .inc-button{
+    padding-top :0px; ;
+    padding-bottom: 0px;
+    .inc-span{
+      font-size: 30px;
+      color: #34C759;
+    }
+  }
+  
+  .inc-button:hover{
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
+  }

@@ -1,0 +1,158 @@
+.image-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.image-text-content {
+  width: 50%;
+  display: flex;
+}
+
+.inc-dec-button {
+  .btn-outline-success {
+    border-radius: 0%;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-hover-bg: #ffffff;
+  }
+
+  .inc-button {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .inc-span {
+      font-size: 25px;
+      color: #34c759;
+    }
+  }
+
+  .btn-success {
+    background: #34c759
+  }
+
+  .inc-button:hover {
+    background-color: rgb(255, 255, 255);
+  }
+}
+.kitchen-detail{
+  padding: 10px 20px;
+  margin-top: 15px;
+  .details{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+  }
+}
+
+.kitchen-main-div {
+  display: flex;
+  padding: 10px 20px;
+  .card-div {
+    justify-content: center;
+    margin: auto;
+    max-width: 65%;
+
+    .border-div {
+      border: 10px solid #F5F5F9;
+
+      .card {
+        .card-title {
+          margin-bottom: 0px;
+          color: #ffffff;
+        }
+
+        .items-length {
+          color: #ffffff;
+        }
+
+        padding: 20px;
+        border-radius: 0px;
+        background: #FF7518;
+
+        .inc-dec-button {
+          .btn-group {
+            height: 32px;
+
+            .inc-span {
+              font-size: 18px;
+            }
+
+            .btn-success {
+              background: #34c759
+            }
+          }
+        }
+
+        .list-group-item {
+          border-radius: 0px;
+        }
+
+        .price {
+          flex: 1;
+          text-align: end;
+          color: #34C759;
+        }
+
+        .checkout-button {
+          margin-top: 10px;
+
+          .btn {
+            background: #34c759;
+            border-radius: 0px;
+            width: 100%;
+          }
+        }
+      }
+      .subtotal{
+        color: #FF7518;
+      }
+    }
+  }
+  .left-div{
+    .list-group{
+      border: 10px solid #F5F5F9;
+      border-radius: 0px;
+    }
+    .list-group-item{
+      border-radius: 0px;
+    }
+    .list-group-item{
+      padding: 0px 10px;
+    }
+  }
+}
+
+.main-card {
+  .image-text-content {
+    img{
+      width: 40px;
+    }
+    .text-wrapper {
+      margin-left: 20px;
+      p {
+        margin-bottom: 0px;
+      }
+      .item-title{
+        font-weight: 600;
+      }
+      .item-price{
+        font-size: 12px;
+        color: #8E8E93;
+      }
+    }
+  }
+
+  .inc-dec-button {
+    flex: 1;
+    text-align: end;
+  }
+}

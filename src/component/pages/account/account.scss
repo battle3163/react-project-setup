@@ -1,0 +1,114 @@
+@import "../../helper/_mixin.scss";
+
+
+
+.address-col {
+    margin-bottom: 3%;
+}
+
+.address-card {
+    min-height: 100%;
+    min-width: 100%;
+
+    .address {
+        font-weight: 450;
+    }
+
+    .img-container {
+        cursor: pointer;
+    }
+
+    .span-image {
+        margin: -10% 0 0 0;
+        font-size: 1rem;
+        color: #D27C2C;
+    }
+
+    .hstack {
+        flex-wrap: wrap;
+    }
+}
+
+.order-col {
+    margin-bottom: 2%;
+
+    .order-card {
+        min-height: 100%;
+        min-width: 100%;
+
+        .tick {
+            position: absolute;
+            left: 8.33%;
+            right: 8.33%;
+            top: 8.33%;
+            bottom: 8.33%;
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            top: 2px;
+            border-radius: 0px;
+            color: aliceblue;
+            background: #007AFF;
+        }
+
+        .square {
+            border: solid 2px #4ECB71;
+            width: 15px;
+            height: 15px;
+
+            .dot {
+                height: 8px;
+                width: 8px;
+                margin: auto;
+                background-color: #4ECB71;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+
+
+        .order-line {
+            margin-top: auto;
+        }
+
+
+        .order-items {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .order-type {
+            margin: auto;
+
+            .order-del {
+                color: #007AFF;
+                font-size: small;
+            }
+
+            .span-image {
+                margin: -1% 0 0 0;
+                font-size: 1rem;
+                color: #8E8E93;
+            }
+        }
+
+        .order-date {
+            margin: 0 0 0 0;
+
+            .img-container {
+                .span-image {
+                    margin: -5% 0 0 0;
+                    font-size: 1rem;
+                    color: #8E8E93;
+                }
+            }
+        }
+
+
+
+
+        .hstack {
+            flex-wrap: wrap;
+        }
+    }
+}

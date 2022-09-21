@@ -1,0 +1,33 @@
+.main-header {
+    .group {
+        .header-text{
+            font-weight: 500;
+            line-height: 31px;
+            color: #8E8E93;
+            font-size: 18px;
+            .arrow-icon {
+                color: #8E8E93;
+                margin-left: 5px
+            }
+        }
+        .mega-div{
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        .title-wrapper{
+           display: flex;
+           padding: 10px;
+            img{
+               width: 20px;
+               margin: 0 10px;
+               height: 25px;
+            }
+            span{
+               color: #131313;
+            }
+        }
+        .mega-menu-wrapper{
+            top: 95%;
+        }
+    }
+}

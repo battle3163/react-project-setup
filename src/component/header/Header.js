@@ -6,8 +6,8 @@ import Login from '../helper/Login'
 import SignUp from '../helper/Signup'
 export default function Header() {
   const mega = [{ 'title': 'My Orders','to':'/orders','imgSrc':'/mega-order.svg' ,'imgAlt':'mega'},
-                { 'title': 'Notifications','to':'/orders','imgSrc':'/mega-notification.svg' ,'imgAlt':'mega' },
-                { 'title': 'Inbox','to':'/orders','imgSrc':'/mega-inbox.svg' ,'imgAlt':'mega' }, 
+                { 'title': 'My Favourites','to':'/favourites','imgSrc':'/favourite.svg' ,'imgAlt':'mega' },
+                { 'title': 'My Address','to':'/address','imgSrc':'/address.svg' ,'imgAlt':'mega' }, 
               ]
   const [hover, setHover] = useState(false)
   const [show, setShow] = useState(false)
@@ -15,7 +15,7 @@ export default function Header() {
   const MouseOver = () => {
     setHover(true)
   }
-  let isLogin=false;
+  let isLogin=true;
   const MouseOut = () => {
     setHover(false)
   }

@@ -19,7 +19,6 @@ function Favourites() {
 
     return (
         <Col sm={9}>
-
             <Row style={{marginBottom:"3%"}}>
                 <h2>Favourites</h2>
                 <div className='homepage-slider'>

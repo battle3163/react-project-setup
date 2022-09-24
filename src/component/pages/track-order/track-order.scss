@@ -1,37 +1,5 @@
 @import "../../helper/_mixin.scss";
 
-
-.navbar {
-    background-color: #ffffff;
-}
-
-.address-col {
-    margin-bottom: 3%;
-}
-
-.address-card {
-    min-height: 100%;
-    min-width: 100%;
-
-    .address {
-        font-weight: 450;
-    }
-
-    .img-container {
-        cursor: pointer;
-    }
-
-    .span-image {
-        margin: -10% 0 0 0;
-        font-size: 1rem;
-        color: #D27C2C;
-    }
-
-    .hstack {
-        flex-wrap: wrap;
-    }
-}
-
 .order-col {
     margin-bottom: 2%;
 
@@ -111,21 +79,4 @@
             flex-wrap: wrap;
         }
     }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .navbar {
-        padding-right: 0px !important;
-    }
-
-}
-
-@media only screen and (min-width: 600px) {
-
-    .navbar {
-        background-color: #ffffff;
-        display: flow-root !important;
-    }
-
 }

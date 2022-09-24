@@ -49,7 +49,7 @@ function Login(props) {
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Button variant="success" style={{ width: "-webkit-fill-available" }}>Login</Button>
+                <Button variant="success" className="action-button w-[100%]">Login</Button>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Text ><a onClick={handleReset}  href='javascript:void(0)'>Forgot your password?</a></Form.Text>

@@ -14,7 +14,7 @@
     @include transform(translate(-50%, -50%));
     top: 50%;
     left: 50%;
-
+    width: 100%;
     .main-heading {
       font-style: normal;
       font-weight: 600;
@@ -106,7 +106,7 @@
 
   .image-wrapper {
     padding: 0 30px;
-
+    height: 350px;
     a{text-decoration: none;}
     .slick-list {
       .slick-slide {
@@ -122,7 +122,10 @@
         right: -5px;
       }
     }
-
+    .slick-slider{
+      height: 100%;
+    max-height: 300px;
+    }
     // .product-slider:after {
     //   content: "";
     //   clear: both;

@@ -8,7 +8,9 @@ function Address() {
     const addressesArr = [
         { id: 1, type: "home", address: "23, GR Apartments, JP Nagar, Banglore-560061, India" },
         { id: 2, type: "work", address: "MR Tower, Sarajpur Road, Banglore-567541, India" },
-        { id: 3, type: "work", address: "31, Sharan Circle, Zundal-Tragad, Ahmedabad-486456, India" }
+        { id: 3, type: "work", address: "31, Sharan Circle, Zundal-Tragad, Ahmedabad-486456, India" },
+        { id: 4, type: "home", address: "23, GR Apartments, JP Nagar, Banglore-560061, India" },
+        { id: 5, type: "work", address: "MR Tower, Sarajpur Road, Banglore-567541, India" }
     ]
 
     const [addresses, setAddresses] = useState(addressesArr);
@@ -26,14 +28,14 @@ function Address() {
                         {
                             addresses.map((item, idx) => {
                                 return (
-                                    <Col className='address-col' key={idx} sm={5}>
+                                    <Col className='address-col' key={idx} sm={6}>
                                         <Card className='address-card'>
                                             <Card.Body>
                                                 <Row>
-                                                    <Col sm={2}>
+                                                    <Col sm={3}>
                                                         <Card.Img className='' variant="right" alt='item' src={item.type + ".svg"} />
                                                     </Col>
-                                                    <Col sm={10}>
+                                                    <Col sm={9}>
                                                         <Form.Text muted><h6>{item.type}</h6></Form.Text>
                                                         <p className='address'>{item.address}</p>
                                                         <Stack direction="horizontal" gap={3}>

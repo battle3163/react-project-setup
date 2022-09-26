@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
-import { PREVIOUS_ARROW, NEXT_ARROW, NO_IMAGE } from '../helper/Settings';
+import {  NO_IMAGE } from '../helper/Settings';
 export default function SimpleSlider() {
     const images = [
         { 'imageSrc': '/slider-image.svg', 'title': 'TEst', alt: 'TEst1' },
@@ -15,7 +15,7 @@ export default function SimpleSlider() {
         const { className, onClick } = props;
         return (
             <div className={className} onClick={onClick}>
-                <img src={NEXT_ARROW} alt="No Arrow" />
+                <img src='/slider_right.svg' alt="No Arrow" />
             </div>
         );
     }
@@ -25,7 +25,7 @@ export default function SimpleSlider() {
             <div
                 className={className}
                 onClick={onClick}
-            ><img src={PREVIOUS_ARROW} alt="No Arrow" /></div>
+            ><img src='/slider_left.svg' alt="No Arrow" /></div>
         );
     }
     let settings = {

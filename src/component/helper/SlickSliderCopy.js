@@ -20,7 +20,7 @@ export default function SlickSliderCopy(props) {
             <div
                 className={className}
                 onClick={onClick}
-            ><img src={NEXT_ARROW} alt="No Arrow" /></div>
+            ><img src='/slider_right.svg' alt="No Arrow" /></div>
         );
     }
     const SamplePrevArrow = (props) => {
@@ -29,7 +29,7 @@ export default function SlickSliderCopy(props) {
             <div
                 className={className}
                 onClick={onClick}
-            ><img src={PREVIOUS_ARROW} alt="No Arrow" /></div>
+            ><img src='/slider_left.svg' alt="No Arrow" /></div>
         );
     }
     let settings = {

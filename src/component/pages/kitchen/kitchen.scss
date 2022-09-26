@@ -28,7 +28,7 @@
     padding-bottom: 0px;
 
     .inc-span {
-      font-size: 25px;
+      font-size: 20px;
       color: #34c759;
     }
   }
@@ -131,6 +131,7 @@ line-height: 24px;
 }
 
 .main-card {
+  padding: 5px;
   .image-text-content {
     img{
       width: 40px;
@@ -155,3 +156,14 @@ line-height: 24px;
     text-align: end;
   }
 }
+.rating-star-main{
+    .parent-span{
+      .child-span{
+        display: flex !important;
+        width: 100% !important;
+      }
+      .empty-icons{
+        display: flex !important;
+      }
+    }
+  }

@@ -1,5 +1,6 @@
 import { Card, Form } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
+
 import Slider from "react-slick";
 import { PREVIOUS_ARROW, NEXT_ARROW, NO_IMAGE } from './Settings';
 export default function SlickSliderCopy(props) {
@@ -76,16 +77,19 @@ export default function SlickSliderCopy(props) {
                                         {/* <p className="sub-heading">North Indian</p> */}
                                         <Form.Text muted>{item.variaty.join(" ▫ ")}</Form.Text>
                                         <p style={{ color: `${item.isAvailable ? "#007AFF" : "#FF3B30"}`,fontWeight:"500",textAlign:"center"}} >{item.isAvailable ? "CURRENTLY AVAILABLE" : "CURRENTLY NOT AVAILABLE"}</p>
-                                        <div style={{margin:"-10% 0 -7% 20%"}}>
+                                        <div className="star-div text-center">
                                         <ReactStars
-                                            count={item.rating}
+                                            count={4}
                                             edit={false}
-                                            size={30}
+                                            size={40}
                                             activeColor="#ffd700"
-                                            value={item.rating}
-                                            isHalf={true}
+                                            value={4}
+                                            classNames={"star-rating-c"}
                                         />
+                                        <span className="star-count">4</span>
+                                        
                                         </div>
+                                        
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

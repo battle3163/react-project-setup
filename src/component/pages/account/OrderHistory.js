@@ -66,7 +66,7 @@ function OrderHistory() {
                                                 <Stack>
                                                     {item.foods.map((orderItem, idx) => {
                                                         return (
-                                                            <p className="order-items">{orderItem.name} X {orderItem.quantity} = ₹{orderItem.price}</p>
+                                                            <p key={idx} className="order-items">{orderItem.name} X {orderItem.quantity} = ₹{orderItem.price}</p>
                                                         )
                                                     })}
                                                 </Stack>

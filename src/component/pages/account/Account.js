@@ -22,8 +22,8 @@ function AccountPage(props) {
     }
 
     return (
-        <Container>
-            <div style={{ paddingTop: "5%" }} className=''>
+        // <Container>
+            <div style={{ padding: "3%" }} className=''>
                 <Row>
                     <Col sm={3}>
                         <Nav defaultActiveKey="/home"  className="flex-column">
@@ -38,15 +38,16 @@ function AccountPage(props) {
                                     <span style={{ color: "#D27C2C" }}> Edit</span>
                             </Stack>
                             <div className='navbar' style={{marginTop : "10%",paddingRight:"30%"}}>
-                            <Nav.Link style = {{color:"black" , padding:"3% 0" , fontWeight:"600"}} onClick={() => { setActiveTab(1) }}><Stack direction="horizontal" style={{filter: `${activeTab === 1 ? "saturate(10)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="orders.svg" alt='Orders' />Orders</Stack></Nav.Link>
-                            <Nav.Link style = {{color:"black"  , padding:"3% 0" ,  fontWeight:"600"}} onClick={() => { setActiveTab(2) }}><Stack direction="horizontal" style={{filter: `${activeTab === 2 ? "hue-rotate(360deg)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="favourite.svg" alt='Favourite' />Favourites</Stack></Nav.Link>
-                            <Nav.Link style = {{color:"black"  , padding:"3% 0" ,  fontWeight:"600"}} onClick={() => { setActiveTab(3) }}><Stack direction="horizontal" style={{filter: `${activeTab === 3 ? "hue-rotate(180deg)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="address.svg" alt='address' />Address</Stack></Nav.Link>
+                                
+                            <Nav.Link style = {{color:"black" ,  fontWeight:"600"}} onClick={() => { setActiveTab(1) }}><Stack direction="horizontal" style={{filter: `${activeTab === 1 ? "saturate(10)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="orders.svg" alt='Orders' />Orders</Stack></Nav.Link>
+                            <Nav.Link style = {{color:"black"  , fontWeight:"600"}} onClick={() => { setActiveTab(2) }}><Stack direction="horizontal" style={{filter: `${activeTab === 2 ? "hue-rotate(360deg)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="favourite.svg" alt='Favourite' />Favourites</Stack></Nav.Link>
+                            <Nav.Link style = {{color:"black"  , fontWeight:"600"}} onClick={() => { setActiveTab(3) }}><Stack direction="horizontal" style={{filter: `${activeTab === 3 ? "hue-rotate(180deg)" : "invert(25%)"}`}} className="col-md-3 mx-auto" gap={2}><img style={{width:"17px"}} src="address.svg" alt='address' />Address</Stack></Nav.Link>
                         </div>
                         </Nav>
                     </Col>
                     {tabHandle(activeTab)}
                 </Row></div>
-        </Container>
+        //  </Container>
     )
 }
 
